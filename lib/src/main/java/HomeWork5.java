@@ -5,6 +5,8 @@ public class HomeWork5 {
         Phone phone3 = new Phone(298782121, 150, "xiaomi", "Mashaa");
 
 
+
+
         System.out.println(phone1.number + phone1.model + phone1.weight);
         System.out.println(phone2.number + phone2.model + phone2.weight);
         System.out.println(phone3.number + phone3.model + phone3.weight);
@@ -20,13 +22,18 @@ public class HomeWork5 {
         phone2.receiveCall(phone2.number, phone2.name);
         phone3.receiveCall(phone3.number, phone3.name);
 
-        phone1.sendMassage(phone1.number);
-        phone2.sendMassage(phone2.number);
-        phone3.sendMassage(phone3.number);
-            }
+        int[]phones =  {phone1.number, phone2.number, phone3.number};
+        sendMassage(phones);
+
+
+    }
+
+    static void sendMassage (int[]numbers){
+        for (int i = 0; i < numbers.length; i++){
+            System.out.println("Сongratulations you won the phone!!!" + numbers[i]);
         }
-
-
+    }
+}
 class Phone{
     public int number;
     public int weight;
@@ -60,9 +67,7 @@ class Phone{
     public void getNumber(){
         System.out.println(number);
     }
-public void  sendMassage(int number){
-        System.out.println("You won a car" + number);
-}
+
 }
 
 
