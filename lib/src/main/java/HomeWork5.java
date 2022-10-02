@@ -46,7 +46,7 @@ class Phone{
         this.model=model;
         this.name=name;
 
-        Phone phone = new Phone(1, 23);
+        Phone phone = new Phone(336646848, 250);
 
     }
     public Phone(int number,int weight){
@@ -67,7 +67,7 @@ class Phone{
         System.out.println(number);
     }
 public void sendMassage(int number){
-        System.out.println("You won a car");
+        System.out.println("You won the car" + number);
 }
 }
 
