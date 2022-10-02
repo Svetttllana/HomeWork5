@@ -5,6 +5,7 @@ public class HomeWork5 {
         Phone phone3 = new Phone(298782121, 150, "xiaomi", "Mashaa");
 
 
+
         System.out.println(phone1.number + phone1.model + phone1.weight);
         System.out.println(phone2.number + phone2.model + phone2.weight);
         System.out.println(phone3.number + phone3.model + phone3.weight);
