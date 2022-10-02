@@ -22,17 +22,16 @@ public class HomeWork5 {
         phone2.receiveCall(phone2.number, phone2.name);
         phone3.receiveCall(phone3.number, phone3.name);
 
-        int[]phones =  {phone1.number, phone2.number, phone3.number};
-        sendMassage(phones);
+        phone1.sendMassage(phone1.number);
+        phone2.sendMassage(phone2.number);
+        phone3.sendMassage(phone3.number);
+
+
 
 
     }
 
-    static void sendMassage (int[]numbers){
-        for (int i = 0; i < numbers.length; i++){
-            System.out.println("Сongratulations you won the phone!!!" + numbers[i]);
-        }
-    }
+
 }
 class Phone{
     public int number;
@@ -67,7 +66,9 @@ class Phone{
     public void getNumber(){
         System.out.println(number);
     }
-
+public void sendMassage(int number){
+        System.out.println("You won a car");
+}
 }
 
 
