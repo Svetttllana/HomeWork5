@@ -2,7 +2,7 @@ import java.util.Random;
 
 public class Car {
     public static void main(String[] args)  {
-        Car car1 = new Car("Lamba", 150000, 200);
+        Car car1 = new Car("Lamborghini", 150000, 200);
         Car car2 = new Car("Ferrari", 200000, 250);
         try {
             car1.start();
