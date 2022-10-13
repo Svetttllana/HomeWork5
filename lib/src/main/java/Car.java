@@ -30,7 +30,7 @@ public class Car {
         Random random = new Random();
         int a = random.nextInt(20);
         if (a % 2 == 0) {
-            System.out.println(" sorry, there was an error with the car" + brend);
+            throw new EvenNumberException(" sorry, there was an error with the car" + brend);
         } else {
             System.out.println("The car" + brend + "started up");
         }
