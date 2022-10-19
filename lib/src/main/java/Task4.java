@@ -13,9 +13,9 @@ public class Task4 {
         }
 
 
-        for (int i = 0; i < massive4.length; i++) {
-
-        }
+//          for (int i = 0; i < massive4.length; i++) {
+//
+//        }
         for (int i = 0; i < massive4.length; i++) {
             if (massive4[i] % 2 != 0) {
 
