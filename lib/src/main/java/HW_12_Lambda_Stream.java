@@ -6,10 +6,10 @@ import StreamcAPI.TheChildIsAlreadyAnAdult;
 
 public class HW_12_Lambda_Stream {
     public static void main(String[] args) {
-        Kid kidd = new Kid(10, 100, "Sasha");
+        Kid kid1 = new Kid(10, 100, "Sasha");
         TheChildIsAlreadyAnAdult<Kid, Adult> childIsAlreadyAnAdult;
         childIsAlreadyAnAdult = kid-> new Adult(28, 183, "Sasha");
-        Adult adult = childIsAlreadyAnAdult.already(kidd);
+        Adult adult = childIsAlreadyAnAdult.already(kid1);
         System.out.println(adult);
 
         ArrayList<Adult> adults = new ArrayList<>();
